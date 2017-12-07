@@ -1,0 +1,5 @@
+20091027.BOSCLE.csv is a sample of a single game play by play file
+correctedPlayerSeasonData.csv shows the player feature vectors
+clusterAssign.csv file contains the player names and cluster assignments
+rookiestats.csv contains the generic rookie player stats that are used for rookie players since previous season data is not available for them.
+2009-2010_0.csv is the clustered representation of the 20091027.BOSCLE.csv joined with player information and corrected rookie feature vectors. The cluster representation was made by joining files like this together.

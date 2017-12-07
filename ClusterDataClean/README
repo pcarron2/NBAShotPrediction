@@ -1,0 +1,6 @@
+Run these files in order. In ascending order.
+01CleanRookieDataClust.py is run to clean the individual player features, replace rookie players with generic feature vectors with previous year rookie statistics, preform and kmeans clustering on the players, select a clustering and create a table where the proper clustering exists along with the proper player statistics.
+02NBACleanPBPDataClust.py cleans the play by play logs, deals with the inconsistent column assignment issue, determines offensive and defensive positions based on who has the ball and who is the home and away team, and joins player features and clusters to correct records one game at time. It is done one game at a time to preserve memory.
+03createMassivFileClust.py concatenates all of the games into one large pandas dataframe
+04NBATrainDevTestSplitClust.py creates a train validation test split based on dates in the 2009-2010 season. 
+05NBAPandasToNpClist.py creates training validation and test feature and label numpy arrays that can be quickly read in to process.

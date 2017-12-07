@@ -1,0 +1,5 @@
+My final paper is NBAShotOutcomePrediction.pdf
+The run_me_clust.py file contains code for all of my experiments. To save time I created pickle files for all of my results so I could create exhibits. 
+My plotting code is in clustPlotting.py
+I created a large codebase to clean my data in different ways, so I only am including the cleaning code for the Clustered feature representation because that is what most of my paper is referencing. The README file in this folder contains more information.
+Sample Data Files folder contains examples of single games of play-by-play logs, rookie player features, player cluster tables, player performance statistics, and the final processing of a single game. the README file in that folder contains more information.
