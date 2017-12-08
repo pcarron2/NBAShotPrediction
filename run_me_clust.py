@@ -40,10 +40,11 @@ def SVMbase():
 	clf.fit(train_features,train_labels.ravel())
 	clf.predict(test_features)
 	print clf.score(test_features,test_labels)
-'''
-Below is the BernoulliNB Experiment Pipeline
-'''
+
 def NBPipeLine():
+	'''
+	Below is the BernoulliNB Experiment Pipeline
+	'''
 	train_features, train_labels, dev_features, dev_labels, test_features, test_labels= loadData()
 	trainSize=train_features.shape[0]
 	devSize=dev_features.shape[0]
@@ -80,11 +81,12 @@ def NBPipeLine():
 	print "Test Accuracy:"+ str(gridCV.score(test_features,test_labels))
 	return gridCV.grid_scores_
 
-'''
-Below is the SGD Experiment Pipeline
-'''
+
 
 def SGDPipeLine():
+	'''
+	Below is the SGD Experiment Pipeline
+	'''
 	train_features, train_labels, dev_features, dev_labels, test_features, test_labels= loadData()
 	trainSize=train_features.shape[0]
 	devSize=dev_features.shape[0]
@@ -121,11 +123,12 @@ def SGDPipeLine():
 	return gridCV.grid_scores_
 
 
-'''
-Below is the Random Forest Experiment Pipeline
-'''
+
 
 def randomForest():
+	'''
+	Below is the Random Forest Experiment Pipeline
+	'''
 	train_features, train_labels, dev_features, dev_labels, test_features, test_labels= loadData()
 	trainSize=train_features.shape[0]
 	devSize=dev_features.shape[0]
